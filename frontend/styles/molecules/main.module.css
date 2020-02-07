@@ -1,0 +1,41 @@
+.gridContainerMain{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-gap: 0;
+  grid-template-rows: 30fr 1fr;
+  grid-template-columns: 1fr 7fr;
+  grid-template-areas: 
+  "sidebar maincontent"
+  "footer footer";
+}
+
+.overflowScroll{
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.gridSidebarMain{
+  display: grid;
+  grid-area: sidebar;
+  /* background: green; */
+}
+.gridContentMain{
+  display: grid;
+  grid-area: maincontent;
+  /* background: red; */
+}
+.gridFooterMain{
+  display: grid;
+  grid-area: footer;
+  /* background: orange; */
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}

@@ -1,0 +1,12 @@
+.button{
+  cursor: pointer;
+}
+.fadeIn{
+  transition: 0.4s;
+  background: white; 
+  color: black;
+}
+.fadeIn:hover{
+  background: black;
+  color: white;
+}
